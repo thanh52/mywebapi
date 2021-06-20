@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.sqlite-journal
+/Base.Data/bin/Debug/net5.0
+/Base.Data/obj/Debug/net5.0
+/Base.Data/obj
+/Base.Service/bin/Debug/net5.0
+/Base.Service/obj
+/MyWebAPI/obj
+/MyWebAPI/bin/Debug/net5.0
+/MyWebAPI/.vs/MyWebAPI/v16
