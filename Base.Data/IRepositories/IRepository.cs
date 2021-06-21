@@ -9,6 +9,6 @@ namespace Base.Data.IRepositories
 
         Task<TEntity> AddAsync(TEntity entity);
 
-        Task<TEntity> UpdateAsync(TEntity entity);
+        TEntity Update(TEntity entity);
     }
 }

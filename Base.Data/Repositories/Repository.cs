@@ -37,7 +37,6 @@ namespace Base.Data.Repositories
             try
             {
                 await _hTIDbContext.AddAsync(entity);
-                await _hTIDbContext.SaveChangesAsync();
 
                 return entity;
             }
@@ -47,7 +46,7 @@ namespace Base.Data.Repositories
             }
         }
 
-        public async Task<TEntity> UpdateAsync(TEntity entity)
+        public TEntity Update(TEntity entity)
         {
             if (entity == null)
             {
@@ -57,7 +56,6 @@ namespace Base.Data.Repositories
             try
             {
                 _hTIDbContext.Update(entity);
-                await _hTIDbContext.SaveChangesAsync();
 
                 return entity;
             }

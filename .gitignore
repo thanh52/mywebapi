@@ -11,3 +11,5 @@
 /MyWebAPI/obj
 /MyWebAPI/bin/Debug/net5.0
 /MyWebAPI/.vs/MyWebAPI/v16
+/MyWebAPI/.vs/MyWebAPI/config
+/MyWebAPI/.vs/MyWebAPI/DesignTimeBuild/.dtbcache.v2

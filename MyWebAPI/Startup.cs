@@ -1,6 +1,7 @@
 using Base.Data.IRepositories;
 using Base.Data.Models;
 using Base.Data.Repositories;
+using Base.Data.UnitOfWork;
 using Base.Service.IServices;
 using Base.Service.Services;
 using Microsoft.AspNetCore.Builder;
@@ -22,14 +23,15 @@ namespace MyWebAPI
 
         public IConfiguration Configuration { get; }
 
+        
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<HTIDbContext>(options => options.UseSqlServer(Configuration["Database:HTIConnectionString"]));
-            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
-            services.AddTransient<IProjectRepository, ProjectRepository>();
-            services.AddTransient<IProjectService, ProjectService>();
             services.AddControllers();
+            services
+                .AddDatabase(Configuration)
+                .AddRepositories()
+                .AddServices();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MyWebAPI", Version = "v1" });
