@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebAPI", "MyWebAPI.csproj", "{95AE97C5-A03C-472B-B7F0-F268400458DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebAPI", "MyWebAPI.csproj", "{95AE97C5-A03C-472B-B7F0-F268400458DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Data", "..\Base.Data\Base.Data.csproj", "{EE336D22-E01D-4131-A905-2CA3F4F4FFDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.Data", "..\Base.Data\Base.Data.csproj", "{EE336D22-E01D-4131-A905-2CA3F4F4FFDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Service", "..\Base.Service\Base.Service.csproj", "{088648CC-85F8-4786-B982-874F4BBE5CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.Service", "..\Base.Service\Base.Service.csproj", "{088648CC-85F8-4786-B982-874F4BBE5CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Helper", "..\Base.Helper\Base.Helper.csproj", "{F4CAF24E-B639-4B4A-97D5-0FCFE9043DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{088648CC-85F8-4786-B982-874F4BBE5CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{088648CC-85F8-4786-B982-874F4BBE5CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{088648CC-85F8-4786-B982-874F4BBE5CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4CAF24E-B639-4B4A-97D5-0FCFE9043DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4CAF24E-B639-4B4A-97D5-0FCFE9043DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4CAF24E-B639-4B4A-97D5-0FCFE9043DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4CAF24E-B639-4B4A-97D5-0FCFE9043DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
