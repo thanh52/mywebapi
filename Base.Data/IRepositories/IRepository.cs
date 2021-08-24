@@ -10,5 +10,6 @@ namespace Base.Data.IRepositories
         Task<TEntity> AddAsync(TEntity entity);
 
         TEntity Update(TEntity entity);
+        TEntity Find(object id);
     }
 }

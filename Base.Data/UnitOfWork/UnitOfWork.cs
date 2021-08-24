@@ -9,11 +9,13 @@ namespace Base.Data.UnitOfWork
     {
         private readonly HTIDbContext _htiDbContext;
         public IProjectRepository Project;
+        public IUserRepository User;
 
         public UnitOfWork(HTIDbContext db)
         {
             _htiDbContext = db;
             Project = new ProjectRepository(_htiDbContext);
+            User = new UserRepository(_htiDbContext);
         }
 
         public void Dispose()

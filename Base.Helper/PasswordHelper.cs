@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 
 namespace Base.Helper
 {
-    public class PasswordHelper
+    public static class PasswordHelper
     {
         public static string HashPassword(string password, byte[] salt)
         {

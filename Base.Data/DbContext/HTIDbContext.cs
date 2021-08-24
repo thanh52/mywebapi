@@ -18,6 +18,7 @@ namespace Base.Data.Models
         {
         }
 
-        public virtual DbSet<Project> Project { get; set; }
+        //public virtual DbSet<Project> Project { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

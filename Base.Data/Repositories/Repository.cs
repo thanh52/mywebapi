@@ -26,6 +26,17 @@ namespace Base.Data.Repositories
                 throw new Exception($"Couldn't retrieve entities: {ex.Message}");
             }
         }
+        public TEntity Find(object id)
+        {
+            try
+            {
+                return _hTIDbContext.Set<TEntity>().Find(id);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Couldn't retrieve entity: {ex.Message}");
+            }
+        }
 
         public async Task<TEntity> AddAsync(TEntity entity)
         {

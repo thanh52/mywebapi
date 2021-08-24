@@ -22,13 +22,15 @@ namespace MyWebAPI
         {
             return services
                 .AddScoped(typeof(IRepository<>), typeof(Repository<>))
-                .AddScoped<IProjectRepository, ProjectRepository>();
+                .AddScoped<IProjectRepository, ProjectRepository>()
+                .AddScoped<IUserRepository, UserRepository>();
         }
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             return services
-                .AddScoped<IProjectService, ProjectService>();
+                .AddScoped<IProjectService, ProjectService>()
+                .AddScoped<IUserService, UserService>();
         }
     }
 }

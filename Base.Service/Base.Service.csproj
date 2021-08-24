@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Base.Data\Base.Data.csproj" />
+    <ProjectReference Include="..\Base.Helper\Base.Helper.csproj" />
   </ItemGroup>
 
 </Project>
